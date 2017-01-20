@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
     buffer[numBytes] = '\0';    // Terminate the string!
     fputs(buffer, stdout);      // Print the echo buffer
   }
-
+  N=totalBytesRcvd/echoStringLen;
   fputc('\n', stdout); // Print a final linefeed
 
   printf("N=%d\n", N);
